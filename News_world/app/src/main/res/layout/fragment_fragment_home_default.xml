@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yw.news_world.Fragment_home_change">
+<com.yw.news_world.RefreshLayout
+    android:id="@+id/default_swip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.yw.news_world.SmartScrollView
+        android:id="@+id/default_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.yw.news_world.ListViewForScrollView
+        android:id="@+id/default_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </com.yw.news_world.SmartScrollView>
+</com.yw.news_world.RefreshLayout>
+    <ImageButton
+        android:background="@mipmap/reup"
+        android:id="@+id/default_goup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp" />
+
+</RelativeLayout>

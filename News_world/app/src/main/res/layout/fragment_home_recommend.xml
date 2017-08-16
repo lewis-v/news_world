@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yw.news_world.RefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.yw.news_world.SmartScrollView
+            android:id="@+id/smartscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/recommend_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/recommend_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5fffffff"
+            android:layout_above="@+id/recommend_linearlayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:id="@+id/recommend_linearlayout"
+            android:background="#5fffffff"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="10dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+</RelativeLayout>
+
+<LinearLayout
+    android:paddingRight="6dp"
+    android:paddingLeft="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<com.yw.news_world.ListViewForScrollView
+    android:id="@+id/recommend_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        </LinearLayout>
+        </com.yw.news_world.SmartScrollView>
+    </com.yw.news_world.RefreshLayout>
+    <ImageButton
+        android:background="@mipmap/reup"
+        android:id="@+id/recommend_goup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp" />
+
+
+</RelativeLayout>
